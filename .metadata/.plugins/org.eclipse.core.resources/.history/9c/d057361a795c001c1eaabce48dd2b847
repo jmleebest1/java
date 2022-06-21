@@ -1,0 +1,9 @@
+package collection.task;
+
+//학생 한 명이 추가 될 때마다 번호는 자동으로 증가된다.
+//아래 작성된 필드의 접근자는 private으로 한다.
+public class Student {
+	//번호, 이름
+	//국어, 영어, 수학 점수
+	
+}

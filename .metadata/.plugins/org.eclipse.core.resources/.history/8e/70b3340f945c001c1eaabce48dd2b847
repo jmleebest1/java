@@ -1,0 +1,52 @@
+package collection.task;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class School {
+   public static void main(String[] args) {
+      StudentField sf = new StudentField();
+      Scanner sc = new Scanner(System.in);
+      
+      Student std1 = new Student("홍길동");
+      Student std2 = new Student("홍길동");
+      
+      int[] arScore1 = {50, 60, 88};
+      int[] arScore2 = {80, 70, 78};
+      
+      std1.setArScore(arScore1);
+      std2.setArScore(arScore2);
+      
+      //추가
+      sf.insert(std1);
+      sf.insert(std2);
+//      ===========================================
+      String msg = "번호\t이름\t\t국어\t영어\t수학\t총점\t평균";
+      String name = null;
+      int num = 0;
+      ArrayList<Student> students = null;
+      
+      //수정
+      System.out.print("이름 : ");
+      name = sc.next();
+      
+      students = sf.selectNames(name);
+      
+      if(students.size() > 1) {//동명이인이 있을 때
+         System.out.println(msg);
+         for (int i = 0; i < students.size(); i++) {
+            System.out.println(students.get(i));
+         }
+         num = sc.nextInt();
+         
+      }else if(students.size() != 0) {//동명이인이 없을 때
+         num = sf.getNumOfStudent(name);
+         
+      }else {//학생이 없을 때
+         System.out.println("검색 결과가 없습니다.");
+      }
+   }
+}
+
+
+

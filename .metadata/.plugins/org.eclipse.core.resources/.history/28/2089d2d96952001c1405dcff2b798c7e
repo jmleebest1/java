@@ -1,0 +1,29 @@
+package day05;
+
+class SuperCar{//하나의 클래스에선 동일한 클래스를 선언할 수 없다.
+	
+	String brand;
+	String color;
+	int price;
+	
+	SuperCar(String brand, String color, int price){
+		this.brand = brand; //매개변수 -> 값         // 저장되는 영역이 달라서 전역변수와 이름이 같아도 선언가능
+		this.color = color;
+		this.price = price;
+	}
+		void engineStart()	{
+			//지역 변수
+			System.out.println(this.brand+"시동 켜기");
+		}
+		void engineStop()	{
+			System.out.println(brand+"시동 끄기");
+		}
+	//시동 켜기(만약 이미 시동이 켜져있다면 경고 메세지 출력)
+	
+	//시동 끄기(만약 이미 시동이 꺼져있다면 경고 메시지 출력) //return
+}
+
+
+public class Shop {
+
+}

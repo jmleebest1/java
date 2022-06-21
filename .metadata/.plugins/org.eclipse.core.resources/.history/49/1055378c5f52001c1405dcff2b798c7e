@@ -1,0 +1,40 @@
+package day05;
+
+class Car{
+	// 전역변수 -> 밑에 어디서든 사용 가능하다.
+	String brand;  
+	String color;	
+	int price;		
+
+	Car(String brand, String color, int price){
+		
+	}
+	
+	void engineStart()	{
+		System.out.println(brand+"시동 켜기");
+	}
+	void engineStop()	{
+		System.out.println("시동 끄기");
+	}
+	
+}
+
+
+
+
+
+
+
+public class Road {
+	public static void main(String[] args) {
+		Car momCar = new Car();
+		Car dadyCar = new Car();
+		Car myCar = new Car();
+		
+//		System.out.println(momCar);
+//		System.out.println(dadyCar);
+//		System.out.println(myCar);
+		
+		
+	}
+}

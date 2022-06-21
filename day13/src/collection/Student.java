@@ -1,0 +1,47 @@
+package collection;
+
+public class Student {
+	int num;
+	String name;
+	
+	public Student() {;}
+
+	public Student(int num, String name) {
+		this.num = num;
+		this.name = name;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(this == obj) { return true; } //주소비교
+		if(obj instanceof Student) {		//타입비교
+			Student std = (Student)obj; //다운캐스팅
+			if(std.num == this.num) {   //값 비교
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public String toString() {
+		return String.format("학생번호:%d\n이름:%s", num, name);
+	}
+
+	//eqauls를 재정의 했다면, 반드시 hashCode도 재정의 해야한다.
+	@Override
+	public int hashCode() {
+		return this.num;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

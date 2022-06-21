@@ -1,0 +1,59 @@
+package collection;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class UserField {
+	//회원을 저장할 자료구조 선언
+	private ArrayList<User> users = new ArrayList<User>();
+	
+	//암호키
+			private static final int KEY=3;
+	
+//	private UserField(String name) {
+//	
+//	}
+	//아이디 중복검사
+	public void checkId(String id) {
+		User user=null;
+		for(int i=0; i<users.size();i++) {
+			if(users.get(i).getId().equals(id)) {
+				user=users.get(i);
+				break;
+			}
+		}
+		return user;
+	}
+	
+	//회원가입
+	public void join(User user) {
+		user.setPw(encrypt(user.getPw()));
+		users.add(user);
+		
+	}
+	//로그인(아이디랑 비밀번호를 받아서 암호화된 비밀번호끼리 비교)
+	public void login() {
+		String id, pw, name;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("아이디 : "); 
+		id = sc.nextLine();
+		if(!checkId(id))
+		{	System.out.println("이미 사용중인 아이디 입니다.");
+			return;
+		}
+		System.out.print("암호 :"); pw=sc.nextLine();
+		System.out.print("이름 :"); name=sc.nextLine();
+		
+	}
+	
+	//암호화(단방향)
+	public String encrypt(String pw) {//패스워드를 받아서
+		String en_pw="";//암호화를 해줘야되니까
+	for(int i=0; i<pw.length();i++) {//반복문 돌려야지뭐, 각각의 문자가 필요하잖아
+		en_pw+=(char)(pw.charAt(i)*3); //각각의 문자를 다 i값으로 곱하든 나누든
+	}
+	return en_pw;
+	}
+	//복호화
+
+}

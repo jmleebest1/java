@@ -1,0 +1,28 @@
+package ClassTask;
+
+import java.util.Scanner;
+
+public class Mg2 {
+	public static void main(String[] args) {
+		Beggar[]beggar1=new Beggar[2];
+		beggar1[0]=new Beggar("거지",500);
+		
+		Scanner sc=new Scanner(System.in);
+		
+		String title = "거지 키워";
+		String menuMsg="눌러\n1.거지\n2.나가기";
+		int answer=0;
+		
+		 while(true) {
+	         System.out.println(menuMsg);
+	         answer = sc.nextInt();
+	         if(answer == 2) {break;}
+	      
+	         Beggar beggar1 = beggar[charNum - 1];
+	      
+		
+		
+		
+	}
+
+	}}

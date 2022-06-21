@@ -1,0 +1,64 @@
+package collection;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class UserField {
+	//회원을 저장할 자료구조 선언
+	private ArrayList<User> users = new ArrayList<User>();
+	
+	//암호키
+			private static final int KEY=3;
+	
+//	private UserField(String name) {
+//	
+//	}
+	//아이디 중복검사
+	public void checkId(String id) {
+		User user=null;
+		for(int i=0; i<users.size();i++) {
+			if(users.get(i).getId().equals(id)) {
+				user=users.get(i);
+				break;
+			}
+		}
+		return user;
+	}
+	
+	//회원가입
+	public void join(User user) {//외부에서 입력받은 데이터를 객체로 받아오고
+		//이걸 그냥 그대로 넣으면 된다
+		user.setPw(encrypt(user.getPw()));  
+		//패스워드를 암호화를 해야하니까 암호화를 해서 넣는다
+		//user.getPw()기존에 사용자가 입력하던 패스워드를 가져와서 encrypt에 전달하면 암호화된 패스워드가 되고 
+		//암호화된 패스워드를 기존에 있었던 패스워드setPw에다가 수정을하니까 암호화된걸로 바뀐다
+		users.add(user);
+		//그리고나서 DB에다가 넣으면 회원가입은 완료
+		
+	}
+	//로그인(아이디랑 비밀번호를 받아서 암호화된 비밀번호끼리 비교)
+	public void login() {
+		String id, pw, name;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("아이디 : "); 
+		id = sc.nextLine();
+		if(!checkId(id))
+		{	System.out.println("이미 사용중인 아이디 입니다.");
+			return;
+		}
+		System.out.print("암호 :"); pw=sc.nextLine();
+		System.out.print("이름 :"); name=sc.nextLine();
+		
+	}
+	
+	//암호화(단방향)
+	public String encrypt(String pw) {//패스워드를 받아서
+		String en_pw="";//암호화를 해줘야되니까
+	for(int i=0; i<pw.length();i++) {//반복문 돌려야지뭐, 각각의 문자가 필요하잖아
+		en_pw+=(char)(pw.charAt(i)*3); //각각의 문자를 다 i값으로 곱하든 나누든, char로 형변환 해주고
+	}//이걸 en_pw에 연결을 해주면
+	return en_pw;//여기까지가 이제 암호화
+	}
+	//복호화
+
+}

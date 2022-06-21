@@ -1,0 +1,22 @@
+package day05;
+
+class A{
+	int data=100;
+	
+	void printData() {
+		System.out.println(data);
+	}
+	
+}
+
+
+
+
+
+
+public class ClassTest {
+	public static void main(String[] args) {
+		System.out.println("안녕");
+		
+	}
+}

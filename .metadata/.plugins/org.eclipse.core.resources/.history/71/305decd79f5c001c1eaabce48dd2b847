@@ -1,0 +1,20 @@
+package collection;
+
+import java.util.HashSet;
+
+public class SetTest {
+	public static void main(String[] args) {
+		HashSet<String>fruitSet=new HashSet<>();
+		fruitSet.add("수박");
+		fruitSet.add("자두");
+		fruitSet.add("망고");
+		fruitSet.add("딸기");
+		fruitSet.add("사과");
+		fruitSet.add("사과");
+		fruitSet.add("사과");
+		
+		System.out.println(fruitSet);
+		System.out.println(fruitSet.contains("자두"));
+		//Set은 순서가 없다. toString에 있는 Iterator를 통해 순서를 만들 수 있다.
+	}
+}

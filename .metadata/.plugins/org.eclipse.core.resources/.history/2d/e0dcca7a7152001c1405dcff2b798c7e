@@ -1,0 +1,18 @@
+package day05;
+
+class SuperCar{//하나의 클래스에선 동일한 클래스를 선언할 수 없다.
+	 //전역변수는 자동초기화가 된다.
+	String brand;
+	String 
+	
+
+	//시동 켜기(만약 이미 시동이 켜져있다면 경고 메세지 출력) //2가지면 boolean, 3가지면 for
+	void engineStart()	{
+	
+	//시동 끄기(만약 이미 시동이 꺼져있다면 경고 메시지 출력) //return
+}
+
+
+public class Shop {
+
+}

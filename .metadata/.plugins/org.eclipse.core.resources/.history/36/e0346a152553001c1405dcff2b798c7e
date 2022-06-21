@@ -1,0 +1,12 @@
+package ClassTask;
+
+public class Mg2 {
+	public static void main(String[] args) {
+		Beggar[]beggar1=new Beggar[2];
+		beggar1[0]=new Beggar("거지",500);
+		
+		System.out.println(beggar1);
+		
+	}
+
+}

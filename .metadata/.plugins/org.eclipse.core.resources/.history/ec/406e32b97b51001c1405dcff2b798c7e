@@ -1,0 +1,30 @@
+package day04;
+
+public class ArTest {
+	public static void main(String[] args) {
+	
+		
+		  
+	      
+	      // 5 4 3 2 1 넣고 출력
+		  int[] arData = {5, 4, 3, 2, 1};
+		  for(int i = 0; i<arData.length; i++) {
+			  System.out.println(arData[i]);
+		  }
+	      
+	      
+//	      System.out.println(arData);
+//	      System.out.println(arData.length);
+	      
+//	      System.out.println(arData[0] + 7);
+//	      System.out.println(arData[1]);
+//	      System.out.println(arData[2]);
+//	      System.out.println(arData[3]);
+//	      System.out.println(arData[4]);
+	      
+//	      for (int i = 0; i < arData.length; i++) {
+//	         System.out.println(arData[i]);
+//	      }
+	   }
+	}
+

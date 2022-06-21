@@ -1,0 +1,17 @@
+package collection;
+
+import java.util.HashMap;
+
+public class HashMapTest {
+	public static void main(String[] args) {
+		//아이디, 비밀번호, 이름, 나이		
+		HashMap<String, Object>userMap=new HashMap<>();
+		userMap.put("id", "hds1234");
+		userMap.put("qw", "1234");
+		userMap.put("name", "신재민");
+		userMap.put("age", 20);
+		
+		System.out.println(userMap.size());
+		userMap.get("id);
+	}
+}

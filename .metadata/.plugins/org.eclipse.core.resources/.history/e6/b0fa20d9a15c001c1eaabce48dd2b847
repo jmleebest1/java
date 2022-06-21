@@ -1,0 +1,7 @@
+package collection;
+
+public class SetTask {
+	HashSet<Student>set=new HashSet<>();\
+	Student std
+
+}

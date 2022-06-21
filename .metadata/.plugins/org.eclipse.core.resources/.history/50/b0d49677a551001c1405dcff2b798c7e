@@ -1,0 +1,37 @@
+package day04;
+
+import java.util.Scanner;
+
+public class MethodTask {
+	
+	//아이언
+	//1~10까지 println()으로 출력하는 메소드
+	public static void main(String[] args) {
+		MethodTest m = new MethodTest();
+		  int i=0; int result = null;
+		  System.out.printf("들어옴");
+		   for(i=0;i<10;i++){
+			   int result = m.(i+1);
+		      System.out.println(result);
+		      
+		   }
+		
+		
+	}
+	//"홍길동"을 n번 println()으로 출력하는 메소드
+	String name = "홍길동";
+	Scanner sc = new Scanner(System.in);
+	
+
+	
+	//브론즈
+	//이름을 n번 println()으로 출력하는 메소드
+	// 세 정수의 뺄셈을 해주는 메소드
+	
+	
+	
+	
+		
+	
+	}
+}

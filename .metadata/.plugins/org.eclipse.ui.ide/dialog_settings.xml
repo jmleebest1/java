@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\day06_java\day06.zip"/>
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\day04_java\day04.zip"/>
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\names.zip"/>
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\day10.zip"/>
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\day09_java\day09.zip"/>
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\bank.zip"/>
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\day03_java\day03.zip"/>
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\day02_java\day02.zip"/>
+			<item value="C:\Users\신재민\Documents\카카오톡 받은 파일\day01.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

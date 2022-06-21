@@ -1,0 +1,20 @@
+package file;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileTask2 {
+   public static void main(String[] args) throws IOException{
+      // 생선
+      // fish.txt
+      // 도미, 고등어, 갈치, 광어
+      
+      BufferedWriter bw = new BufferedWriter(new FileWriter("fish.txt"));
+      bw.write("도미\n");
+      bw.write("고등어\n");
+      bw.write("갈치\n");
+      bw.write("광어\n");
+      bw.close();
+   }
+}

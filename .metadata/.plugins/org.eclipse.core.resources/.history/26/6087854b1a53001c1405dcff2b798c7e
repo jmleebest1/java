@@ -1,0 +1,9 @@
+package ClassTask;
+
+public class Mg2 {
+	public static void main(String[] args) {
+		Beggar[]beggars=new Beggar[2];
+		
+	}
+
+}

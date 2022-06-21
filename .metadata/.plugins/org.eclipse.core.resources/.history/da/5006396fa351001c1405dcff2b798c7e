@@ -1,0 +1,28 @@
+package day04;
+
+public class MethodTask {
+	
+	//아이언
+	//1~10까지 println()으로 출력하는 메소드
+	public static void a(){
+		   int i=0;
+		   while(i<10){
+		      System.out.println(i++);
+		      
+		   }
+		
+		
+	}
+	//"홍길동"을 n번 println()으로 출력하는 메소드
+	
+	//브론즈
+	//이름을 n번 println()으로 출력하는 메소드
+	// 세 정수의 뺄셈을 해주는 메소드
+	
+	
+	
+	public static void main(String[] args) {
+		
+	
+	}
+}
